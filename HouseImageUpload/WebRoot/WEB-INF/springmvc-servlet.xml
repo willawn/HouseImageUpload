@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="adminHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="hzy.do">ImageController</prop>
+				<prop key="simpleUpload.do">UploadController</prop>
+				<prop key="yasuo.do">ImgDealController</prop>
+			</props>
+		</property>
+	 </bean>
+	 
+	 <bean name="ImageController" class="com.zushou365.houseimageupload.controller.ImageFileUploadController"></bean>
+
+	 <bean id="imageInit" class="com.zushou365.houseimageupload.spring.SchedulerInitializingBean"></bean>
+	 
+	 <bean name="UploadController" class="com.zushou365.houseimageupload.controller.UploadController"></bean>
+	 
+	 <bean name="ImgDealController" class="com.zushou365.houseimageupload.controller.ImgDealController"></bean>
+	 
+</beans>

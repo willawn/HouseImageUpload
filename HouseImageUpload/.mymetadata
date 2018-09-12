@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="HouseImageUpload"
+  id="myeclipse.1305527382560"
+  context-root="/HouseImageUpload"
+  j2ee-spec="5.0"
+  archive="HouseImageUpload.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
